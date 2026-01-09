@@ -1,25 +1,37 @@
 <div class="relative w-full h-screen flex items-center justify-center overflow-hidden">
     
-    <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+    <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
         <source src="assets/background.mp4" type="video/mp4">
         Browser kamu tidak mendukung video tag.
     </video>
 
-    <div class="absolute z-10 inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
 
-    <div class="relative z-20 text-center px-4 reveal-up">
-        <span class="inline-block py-1 px-3 rounded-full bg-brand/20 border border-brand/40 text-brand text-xs font-bold tracking-widest uppercase mb-6">
+    <div class="relative z-20 text-center px-4 max-w-5xl mx-auto reveal-up">
+        
+        <span class="inline-block py-1.5 px-4 rounded-full bg-brand/20 border border-brand/40 text-brand-light text-xs md:text-sm font-bold tracking-[0.3em] uppercase mb-6 backdrop-blur-sm">
             Ensiklopedia Sejarah Islam
         </span>
-        <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-lg">
             Menelusuri Jejak <br>
             <span class="text-brand">Keagungan Islam</span>
         </h1>
-        <p class="text-lg text-gray-200 max-w-2xl mx-auto mb-10 font-light">
+
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light leading-relaxed drop-shadow-md">
             Sebuah perjalanan melintasi waktu, mempelajari warisan para Nabi, ketegasan para Khalifah, dan kebijaksanaan para Ulama.
         </p>
-        <button onclick="loadPage('nabi')" class="px-8 py-3 bg-brand text-white rounded-full font-bold hover:bg-brand-dark transition shadow-lg hover:shadow-brand/50 transform hover:-translate-y-1">
+
+        <button onclick="loadPage('nabi')" class="px-8 py-4 bg-brand hover:bg-brand-dark text-white rounded-full font-bold transition-all duration-300 shadow-[0_0_20px_rgba(180,142,93,0.4)] hover:shadow-[0_0_30px_rgba(180,142,93,0.6)] transform hover:-translate-y-1">
             Mulai Membaca
         </button>
+
     </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce opacity-70">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+
 </div>
